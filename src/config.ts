@@ -5,7 +5,8 @@ export const SITE: Site = {
   author: "Rioba Ian",
   desc: "Web development is quite intimating with the new technologies released everyday, ain't so?",
   title: "Rioba's Blog",
-  ogImage: "astropaper-og.jpg",
+  ogImage:
+    "https://res.cloudinary.com/drxurk7lu/image/upload/v1683229151/blog-theme_gkjz6b.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };

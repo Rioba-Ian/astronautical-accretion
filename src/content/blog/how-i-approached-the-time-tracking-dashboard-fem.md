@@ -10,7 +10,7 @@ tags:
   - HTML
   - CSS
   - TypeScript
-ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
+ogImage: ""
 
 description: "Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
 ---
