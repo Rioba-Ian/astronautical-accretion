@@ -5,13 +5,14 @@ pubDatetime: 2023-05-02T03:42:51Z
 postSlug: how-to-use-typescript-with-html-css-to-build-dashboard-application
 featured: true
 draft: false
-ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png
 tags:
   - JavaScript
   - HTML
   - CSS
   - TypeScript
-description: "EXAMPLE POST: Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
+ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
+
+description: "Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
 ---
 
 My experience in using Typescript for the dashboard time tracker frontend mentor challenge.
@@ -31,3 +32,7 @@ The project on desktop
 ![Time tracking dashboard on desktop](/time-tracking-dashboard-mobile.png)
 
 The project on mobile
+
+## Typescript
+
+The first thing is to set up typescript using ts.config. The way to do this using tsc -w and tsc init.
