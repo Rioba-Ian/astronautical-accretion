@@ -10,7 +10,7 @@ tags:
   - HTML
   - CSS
   - TypeScript
-ogImage: time-tracking-dashboard.png
+ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png
 description: "EXAMPLE POST: Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
 ---
 
