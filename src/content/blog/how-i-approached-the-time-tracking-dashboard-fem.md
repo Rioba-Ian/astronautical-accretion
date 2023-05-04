@@ -5,12 +5,12 @@ pubDatetime: 2023-05-02T03:42:51Z
 postSlug: how-to-use-typescript-with-html-css-to-build-dashboard-application
 featured: true
 draft: false
+ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png
 tags:
   - JavaScript
   - HTML
   - CSS
   - TypeScript
-ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png
 description: "EXAMPLE POST: Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
 ---
 
