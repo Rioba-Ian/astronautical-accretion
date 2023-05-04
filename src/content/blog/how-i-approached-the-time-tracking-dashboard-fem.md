@@ -1,5 +1,5 @@
 ---
-title: Using Typescript, HTML and CSS
+title: Developing a Dashboard using Typescript, HTML and CSS
 author: Rioba Ian
 pubDatetime: 2023-05-02T03:42:51Z
 postSlug: how-to-use-typescript-with-html-css-to-build-dashboard
