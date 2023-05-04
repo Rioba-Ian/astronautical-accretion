@@ -3,8 +3,8 @@ title: How to connect AstroPaper blog with Forestry CMS
 author: Sat Naing
 pubDatetime: 2023-05-02T03:42:51Z
 postSlug: how-to-connect-astro-paper-blog-with-forestry-cms
-featured: false
-draft: true
+featured: true
+draft: false
 tags:
   - docs
   - forestry-cms
