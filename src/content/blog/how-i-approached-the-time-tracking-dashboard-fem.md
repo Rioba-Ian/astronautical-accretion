@@ -1,18 +1,16 @@
 ---
-title: How to connect AstroPaper blog with Forestry CMS
-author: Sat Naing
+title: Using Typescript, HTML and CSS
+author: Rioba Ian
 pubDatetime: 2023-05-02T03:42:51Z
-postSlug: how-to-connect-astro-paper-blog-with-forestry-cms
+postSlug: how-to-use-typescript-with-html-css-to-build-dashboard
 featured: true
 draft: false
 tags:
-  - docs
-  - forestry-cms
-  - astro-paper
+  - frontend-mentor
+  - js
+  - typescript
 ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png
-description:
-  Step by step process of connecting Astro-Paper blog theme with Forestry
-  Headless CMS.
+description: How I approached the FEM dashboard application using Typescript
 ---
 
 My experience in using Typescript for the dashboard time tracker frontend mentor challenge.
