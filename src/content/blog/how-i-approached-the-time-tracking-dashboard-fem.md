@@ -1,18 +1,18 @@
 ---
-title: How I approched the time tracking dashboard application Frontend Mentor Challenge using TS
-author: Ian Rioba
+title: How to connect AstroPaper blog with Forestry CMS
+author: Sat Naing
 pubDatetime: 2023-05-02T03:42:51Z
-postSlug: how-to-use-typescript-with-html-css-to-build-dashboard-application
-featured: true
-draft: false
+postSlug: how-to-connect-astro-paper-blog-with-forestry-cms
+featured: false
+draft: true
 tags:
-  - JavaScript
-  - HTML
-  - CSS
-  - TypeScript
-ogImage: "https://res.cloudinary.com/drxurk7lu/image/upload/v1683227129/time-tracking-dashboard_at9yhu.png"
-
-description: "Developing a dashboard application using HTML/CSS/TS. How to approach it in an imperative way using event.target in ts."
+  - docs
+  - forestry-cms
+  - astro-paper
+ogImage: https://res.cloudinary.com/noezectz/v1663745737/astro-paper/astropaper-x-forestry-og_kqfwp0.png
+description:
+  Step by step process of connecting Astro-Paper blog theme with Forestry
+  Headless CMS.
 ---
 
 My experience in using Typescript for the dashboard time tracker frontend mentor challenge.
