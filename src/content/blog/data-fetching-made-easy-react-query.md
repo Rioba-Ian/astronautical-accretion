@@ -13,7 +13,7 @@ tags:
   - useEffect
   - react-query
   - data fetching
-ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1688632999/1688545962339_dvr6tv.jpg
+ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1688767296/React-Query-logo_oycf9c.webp
 description: Data fetching made easy with react query, caching, retries, deduping, polling, infinite data, mutations, invaidations
 ---
 
