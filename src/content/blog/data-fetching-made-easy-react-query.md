@@ -421,9 +421,3 @@ export default function PaginatedQueries() {
   );
 }
 ```
-
-## Updating data through mutations
-
-### Invalidate data after mutations
-
-## Optimistic updates

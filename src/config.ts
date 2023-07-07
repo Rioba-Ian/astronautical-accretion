@@ -1,12 +1,12 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog-rioba-ian.vercel.app/",
+  website: "https://www.riobaian.dev/",
   author: "Rioba Ian",
-  desc: "Web development is quite intimating with the new technologies released everyday, ain't so?",
-  title: "Rioba's Blog",
+  desc: "Learning new stuff on the web, new technologies alongside programming concepts step by step.",
+  title: "Rioba Ian Website",
   ogImage:
-    "https://res.cloudinary.com/drxurk7lu/image/upload/v1683229151/blog-theme_gkjz6b.png",
+    "https://res.cloudinary.com/drxurk7lu/image/upload/v1688767128/CE0060b_jcm5lv.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
