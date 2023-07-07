@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://www.riobaian.dev/",
   author: "Rioba Ian",
   desc: "Learning new stuff on the web, new technologies alongside programming concepts step by step.",
-  title: "Rioba Ian Website",
+  title: "Rioba's Blog",
   ogImage:
     "https://res.cloudinary.com/drxurk7lu/image/upload/v1688767128/CE0060b_jcm5lv.png",
   lightAndDarkMode: true,
