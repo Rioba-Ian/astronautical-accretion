@@ -67,7 +67,7 @@ You can specify site's title or logo image in `src/config.ts` file.
 ```js
 // file: src/config.ts
 export const LOGO_IMAGE = {
-  enable: false,
+  enable: true,
   svg: true,
   width: 216,
   height: 46,

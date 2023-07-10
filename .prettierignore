@@ -1,5 +1,7 @@
 # Ignore everything
 /*
+/public/assets/riodev.svg
+
 
 # Except these files & folders
 !/src

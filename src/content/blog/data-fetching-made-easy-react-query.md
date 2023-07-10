@@ -1,5 +1,5 @@
 ---
-title: Data Fetching with React Query
+title: Data Fetching with React Query (Pt 1)
 author: Rioba Ian
 pubDatetime: 2023-07-06T13:05:51Z
 postSlug: data-fetching-with-react-query-caching-polling-mutations
@@ -13,7 +13,7 @@ tags:
   - useEffect
   - react-query
   - data fetching
-ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1688767296/React-Query-logo_oycf9c.webp
+ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1688767277/react-query_jccusq.jpg
 description: Data fetching made easy with react query, caching, retries, deduping, polling, infinite data, mutations, invaidations
 ---
 

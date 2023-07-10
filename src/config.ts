@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://www.riobaian.dev/",
   author: "Rioba Ian",
   desc: "Learning new stuff on the web, new technologies alongside programming concepts step by step.",
-  title: "Rioba's Blog",
+  title: "riobaian.dev",
   ogImage:
     "https://res.cloudinary.com/drxurk7lu/image/upload/v1688767128/CE0060b_jcm5lv.png",
   lightAndDarkMode: true,
@@ -14,7 +14,7 @@ export const SITE: Site = {
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
-  enable: false,
+  enable: true,
   svg: true,
   width: 216,
   height: 46,
