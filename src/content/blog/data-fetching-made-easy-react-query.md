@@ -14,7 +14,7 @@ tags:
   - react-query
   - data fetching
 ogImage: https://res.cloudinary.com/drxurk7lu/image/upload/v1688767277/react-query_jccusq.jpg
-description: Data fetching made easy with react query, caching, retries, deduping, polling, infinite data, mutations, invaidations
+description: Data fetching made easy with react query, caching, retries, deduping, polling, staleness
 ---
 
 In this article I'll be covering important ways that you can better fetch your data in a react application while having less work in handling state and other functionalities such as retrying requests, caching, polling, deduping, mutations, inifinite scrolling and many more.
