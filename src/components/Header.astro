@@ -3,8 +3,8 @@ import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
-import logoPNG from "/assets/riodev.png";
-import logoSVG from "/assets/riodev 2.svg";
+import logoPNG from "/assets/rio-low-resolution-logo-color-on-transparent-background.png";
+// import logoSVG from "/assets/logo.svg";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
@@ -21,7 +21,11 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
+              src={
+                LOGO_IMAGE.svg
+                  ? "https://res.cloudinary.com/drxurk7lu/image/upload/v1689058854/rio-low-resolution-logo-color-on-transparent-background_dti37j.svg"
+                  : logoPNG
+              }
               alt="AstroPaper Logo"
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
