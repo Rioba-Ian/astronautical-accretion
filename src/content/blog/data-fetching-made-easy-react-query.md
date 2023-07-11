@@ -2,7 +2,7 @@
 title: Data Fetching with React Query (Pt 1)
 author: Rioba Ian
 pubDatetime: 2023-07-06T13:05:51Z
-postSlug: data-fetching-with-react-query-caching-polling-mutations
+postSlug: data-fetching-with-react-query-caching-polling-part-1
 featured: true
 draft: false
 tags:
