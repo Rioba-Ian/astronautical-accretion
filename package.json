@@ -12,6 +12,7 @@
     "format": "prettier --plugin-search-dir=. --write .",
     "cz": "cz",
     "prepare": "husky install",
+    "postinstall": "husky install",
     "lint": "eslint ."
   },
   "dependencies": {
