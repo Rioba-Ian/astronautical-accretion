@@ -66,15 +66,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     <Hr />
 
     <section id="recent-posts">
-      <h2>View My elevator pitch</h2>
+      <h2 class="py-2 sm:py-4">View My elevator pitch</h2>
 
       <!-- ui skeleton for youtube video to watch -->
-      <div class="md:w-[720px] w-96 sm:w-[560px]">
+      <div class="md:w-[720px] min-w-96 sm:w-[560px]">
         <iframe
           class="w-full"
+          height="360"
           src="https://www.youtube.com/embed/OCWj5xgu5Ng"
           title="Blank Video Placeholder (HD)"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>

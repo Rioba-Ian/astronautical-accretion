@@ -3,10 +3,49 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
+import PortfolioProject from "@components/molecules/portfolio-project-feature";
+import { SITE } from "@config";
 ---
 
-<Layout title={`Portfolio | ${Astro.site}`}>
+<Layout title={`Portfolio | ${SITE.title}`}>
   <Header activeNav="search" />
-  <Main pageTitle="Portfolio" pageDesc="View My Portfolio" />
+  <Main pageTitle="Portfolio" pageDesc="View My Portfolio">
+    <p>
+      A collection of my projects showcasing my skills in fullstack development,
+      frontend web development, and more. Each project demonstrates my ability
+      to create functional and visually appealing applications using modern
+      technologies. Feel free to explore the projects below to see my work in
+      action. If you have any questions or would like to collaborate, don't
+      hesitate to reach out!
+    </p>
+  </Main>
+
+  <div class="flex flex-col items-center justify-center gap-8 sm:gap-16">
+    <PortfolioProject
+      imgSrc="https://res.cloudinary.com/drxurk7lu/image/upload/v1748244267/Screenshot_26-5-2025_102335_ecommerce-product-page-fem.vercel.app_h0pppt.jpg"
+      link="https://ecommerce-product-page-fem.vercel.app/"
+      title="Sneakers Ecommerce Product Page"
+      category="Fullstack development"
+      description="Ecommerce Product Page for sneakers. Integrated with Stripe for payment processing and prisma for database migrations."
+      client:load
+    />
+
+    <PortfolioProject
+      imgSrc="https://res.cloudinary.com/drxurk7lu/image/upload/v1748246025/Screenshot_26-5-2025_105325_www.lethaniconnect.com_xv5qtu.jpg"
+      link="https://lethaniconnect.com"
+      title="Agency Portfolio Web Application"
+      category="Frontend Web Development"
+      description="A portfolio web application for an agency. Built with Next.js, Tailwind CSS, and Framer Motion for animations. Includes calendly integration for booking appointments."
+      client:load
+    />
+    <PortfolioProject
+      imgSrc="https://res.cloudinary.com/drxurk7lu/image/upload/v1748247027/Screenshot_26-5-2025_11940_orders-shee.vercel.app_wxf4t8.jpg"
+      link="https://orders-shee.vercel.app/dashboard"
+      title="Orders Management Dashboard"
+      category="Fullstack development"
+      description="A dashboard for managing orders. Built with Next.js, Tailwind CSS, and Prisma for database migrations. Includes authentication and authorization features."
+      client:load
+    />
+  </div>
   <Footer />
 </Layout>
