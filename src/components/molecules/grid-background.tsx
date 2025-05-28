@@ -1,4 +1,6 @@
-export function GridBackgroundComp({ content }) {
+import { cn } from "@utils/index";
+
+export function GridBackgroundComp({ content }: { content: string }) {
   return (
     <div className="bg-white dark:bg-black relative flex h-[50rem] w-full items-center justify-center">
       <div
