@@ -8,6 +8,7 @@ interface PortfolioProjectProps {
   link: string;
   category: string;
   description?: string;
+  tags?: string[];
 }
 
 export default function PortfoliProject({
@@ -15,6 +16,7 @@ export default function PortfoliProject({
   imgSrc,
   title,
   category = "Web Development",
+  tags = ["#NextJs", "#MongoDB", "#React", "#Typescript", "#Prisma"],
   description,
 }: PortfolioProjectProps) {
   return (
@@ -23,11 +25,9 @@ export default function PortfoliProject({
         <p className="text-xs font-thin">{category}</p>
         <h2 className="md:text-4xl text-2xl font-medium">{title}</h2>
         <div className="text-gray-500 flex flex-wrap gap-2 text-sm">
-          <Badge content="#NextJs" />
-          <Badge content="#MongoDB" />
-          <Badge content="#React" />
-          <Badge content="#Typescript" />
-          <Badge content="#Prisma" />
+          {tags.map(tag => (
+            <Badge key={tag} content={tag} />
+          ))}
         </div>
 
         <p>{description}</p>
