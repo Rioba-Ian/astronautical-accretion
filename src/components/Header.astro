@@ -16,7 +16,7 @@ const { activeNav } = Astro.props;
 <header class="mx-auto w-full bg-skin-fill">
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
-    <div class="flex items-center justify-start p-4 sm:items-center sm:py-8">
+    <div class="flex w-full items-center justify-between p-4 sm:justify-start sm:py-8">
       <a href="/" class="logo">
         {
           LOGO_IMAGE.enable ? (
@@ -62,7 +62,7 @@ const { activeNav } = Astro.props;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items" class="hidden sm:flex">
           <li>
             <a href="/about" class={activeNav === "about" ? "active" : ""}>
               About
@@ -150,10 +150,10 @@ const { activeNav } = Astro.props;
     @apply relative flex w-full items-center justify-start p-4 sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    @apply py-1 text-xl font-semibold sm:text-2xl;
   }
   .hamburger-menu {
-    @apply self-end p-2 sm:hidden;
+    @apply p-2 sm:hidden;
   }
   .hamburger-menu svg {
     @apply h-6 w-6 scale-125 fill-skin-base;
@@ -164,6 +164,9 @@ const { activeNav } = Astro.props;
   }
   nav ul {
     @apply flex w-full flex-col items-center justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0;
+  }
+  nav ul#menu-items.hidden {
+    @apply !hidden sm:!flex;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -226,6 +229,6 @@ const { activeNav } = Astro.props;
       "aria-label",
       menuExpanded ? "Open Menu" : "Close Menu"
     );
-    menuItems?.classList.toggle("display-none");
+    menuItems?.classList.toggle("hidden");
   });
 </script>
