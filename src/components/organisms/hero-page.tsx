@@ -38,8 +38,8 @@ export function HeroHighlightDemo() {
         <div className="flex flex-col items-start gap-8 sm:flex-row">
           {/* Image Section */}
           <div className="xl:w-8/12 relative w-full sm:w-7/12">
-            <h1 className="md:text-8xl font-mono uppercase leading-none text-skin-accent sm:-top-10 sm:text-5xl">
-              I'm Rioba Ian
+            <h1 className="md:text-8xl absolute -top-10 z-20 font-cash-paper uppercase leading-none text-skin-accent sm:-top-10 sm:text-5xl">
+              Rioba Ian
             </h1>
             <div className="lg:aspect-auto lg:h-[500px] relative aspect-[4/3] overflow-hidden rounded-3xl">
               <img
@@ -56,10 +56,11 @@ export function HeroHighlightDemo() {
                   Software Engineer
                 </Highlight>
               </div>
-              <p className="mt-4 max-w-2xl text-lg text-skin-base opacity-90">
-                I build things that solve real-world problems. Constant learner
-                & adventure junkie.
-              </p>
+              <ul className="mt-4 max-w-2xl font-cash-paper text-lg text-skin-base opacity-90">
+                <li className="">Solving real-world problems.</li>
+                <li>Constant learner</li>
+                <li>& adventure junkie.</li>
+              </ul>
             </div>
           </div>
 
