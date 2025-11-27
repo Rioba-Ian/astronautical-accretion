@@ -1,0 +1,35 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { SITE, SOCIALS } from "@config";
+import CalendlyWidget from "@components/CalendlyWidget";
+
+const email = SOCIALS.find(s => s.name === "Mail")?.href || "riobafelix@gmail.com";
+---
+
+<Layout title={`Schedule a Call | ${SITE.title}`}>
+  <Header />
+  <main id="main-content">
+    <section id="schedule" class="mb-28 max-w-3xl prose-img:border-0">
+      <h1 class="text-3xl tracking-wider sm:text-4xl font-bold mb-8">Schedule a Call</h1>
+      
+      <p class="mb-8 text-lg">
+        I'd love to chat with you! Please use the calendar below to book a time that works for you.
+      </p>
+
+      <CalendlyWidget client:only="react" url="https://calendly.com/riobafelix/30-min-firechat" />
+      
+      <p class="mt-8 text-sm opacity-80">
+        Alternatively, you can email me at <a href={`mailto:${email}`} class="underline hover:text-skin-accent">{email}</a>.
+      </p>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  #schedule {
+    @apply mx-auto pb-12 pt-20 px-4;
+  }
+</style>

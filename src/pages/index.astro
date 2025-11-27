@@ -6,10 +6,8 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
-import { SOCIALS } from "@config";
 // import { GridBackgroundComp } from "@components/molecules/grid-background";
 import { HeroHighlightDemo } from "@components/organisms/hero-page";
 
@@ -17,8 +15,6 @@ const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 // const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
@@ -26,68 +22,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <!-- <GridBackgroundComp content={"Karibu..."} /> -->
     <HeroHighlightDemo client:load />
-    <section id="hero">
-      <h1>Karibu</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-      </a>
-
-      <div class="hero-content">
-        <p>
-          I'm Rioba Ian, a full stack developer and a software engineer. I love
-          and enjoy programming, my skillsets are in Javascript, Typescript,
-          Golang, Python and Rust. I develop mostly web applications, mobile
-          applications and recently I've thrown myself into systems programming.
-          I'm a passionate and hard-working person and I keep learning new
-          things. I believe that success is for those who are resilient and
-          gritty enough to keep going.
-        </p>
-      </div>
-
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section>
 
     <Hr />
-
-    <!-- {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data }) => (
-                <Card
-                  href={`/posts/${slugify(data)}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          <Hr />
-        </>
-      )
-    } -->
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>

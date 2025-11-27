@@ -7,16 +7,16 @@ import LinkButton from "./LinkButton.astro";
 // import logoSVG from "/assets/logo.svg";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search" | "portfolio";
+  activeNav?: "posts" | "tags" | "about" | "search" | "portfolio" | "contact";
 }
 
 const { activeNav } = Astro.props;
 ---
 
-<header>
+<header class="mx-auto w-full bg-skin-fill">
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
-    <div class="top-nav-wrap">
+    <div class="flex w-full items-center justify-between p-4 sm:justify-start sm:py-8">
       <a href="/" class="logo">
         {
           LOGO_IMAGE.enable ? (
@@ -33,6 +33,9 @@ const { activeNav } = Astro.props;
           )
         }
       </a>
+
+      <div class="mx-4 hidden h-8 border-l border-skin-line sm:block"></div>
+
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -59,10 +62,20 @@ const { activeNav } = Astro.props;
             <line x1="6" y1="6" x2="18" y2="18" class="close"></line>
           </svg>
         </button>
-        <ul id="menu-items" class="display-none sm:flex">
+        <ul id="menu-items" class="hidden sm:flex">
+          <li>
+            <a href="/about" class={activeNav === "about" ? "active" : ""}>
+              About
+            </a>
+          </li>
           <li>
             <a href="/posts" class={activeNav === "posts" ? "active" : ""}>
-              Posts
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class={activeNav === "contact" ? "active" : ""}>
+              Contact
             </a>
           </li>
           <li>
@@ -73,15 +86,13 @@ const { activeNav } = Astro.props;
               Portfolio
             </a>
           </li>
-          <li>
-            <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
-              Tags
-            </a>
+          <li class="sm:ml-auto">
+            <LinkButton href="/hire-me" variant="outline">Hire Me</LinkButton>
           </li>
           <li>
-            <a href="/about" class={activeNav === "about" ? "active" : ""}>
-              About
-            </a>
+            <LinkButton href="/schedule-call" variant="primary">
+              Schedule a Call
+            </LinkButton>
           </li>
           <li>
             <LinkButton
@@ -133,26 +144,29 @@ const { activeNav } = Astro.props;
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
-    @apply mx-auto flex max-w-6xl flex-col items-center justify-between sm:flex-row;
+    @apply mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-center sm:flex-row;
   }
-  .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+  ###top-nav-wrap {
+    @apply relative flex w-full items-center justify-start p-4 sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    @apply py-1 text-xl font-semibold sm:text-2xl;
   }
   .hamburger-menu {
-    @apply self-end p-2 sm:hidden;
+    @apply p-2 sm:hidden;
   }
   .hamburger-menu svg {
     @apply h-6 w-6 scale-125 fill-skin-base;
   }
 
   nav {
-    @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    @apply flex w-full flex-col items-center bg-skin-fill sm:ml-2 sm:flex-1 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
-    @apply flex w-full flex-col items-center justify-center space-y-4 sm:flex-row sm:justify-end sm:space-x-4 sm:space-y-0;
+    @apply flex w-full flex-col items-center justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-4 sm:space-y-0;
+  }
+  nav ul#menu-items.hidden {
+    @apply !hidden sm:!flex;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -215,6 +229,6 @@ const { activeNav } = Astro.props;
       "aria-label",
       menuExpanded ? "Open Menu" : "Close Menu"
     );
-    menuItems?.classList.toggle("display-none");
+    menuItems?.classList.toggle("hidden");
   });
 </script>

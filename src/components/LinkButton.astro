@@ -5,15 +5,32 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  variant?: "primary" | "outline" | "ghost";
 }
 
-const { href, className, ariaLabel, title, disabled = false } = Astro.props;
+const {
+  href,
+  className = "",
+  ariaLabel,
+  title,
+  disabled = false,
+  variant = "ghost",
+} = Astro.props;
+
+const baseStyles = "group inline-block";
+const variantStyles = {
+  primary:
+    "bg-skin-accent text-skin-inverted hover:bg-skin-accent/80 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+  outline:
+    "border border-skin-accent text-skin-accent hover:bg-skin-accent hover:text-skin-inverted rounded-full px-4 py-2 text-sm font-medium transition-colors",
+  ghost: "hover:text-skin-accent",
+};
 ---
 
 <a
   href={disabled ? "#" : href}
   tabindex={disabled ? "-1" : "0"}
-  class={`group inline-block ${className}`}
+  class={`${baseStyles} ${variantStyles[variant]} ${className}`}
   aria-label={ariaLabel}
   title={title}
   aria-disabled={disabled}
@@ -22,7 +39,5 @@ const { href, className, ariaLabel, title, disabled = false } = Astro.props;
 </a>
 
 <style>
-  a {
-    @apply hover:text-skin-accent;
-  }
+  /* Remove local style as it's handled by classes now */
 </style>
