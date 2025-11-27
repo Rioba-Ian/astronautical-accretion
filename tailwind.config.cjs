@@ -16,6 +16,7 @@ module.exports = {
     // if one breakpoint is not enough for you
     screens: {
       sm: "640px",
+      "2xl": "1536px",
     },
 
     // Uncomment the following extend
