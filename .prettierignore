@@ -1,6 +1,7 @@
 # Ignore everything
 /*
 *.otf
+*.astro
 
 
 # Except these files & folders

@@ -14,7 +14,7 @@ I studied Financial Engineering at the Jomo Kenyatta University of Agriculture a
 After some time in the data analytics field, I transitioned into software engineering, where I could apply my **analytical skills** to build **robust** and **scalable applications**. I have experience in various programming languages and frameworks, and I enjoy working on challenging projects that require **innovative solutions**.
 
 <div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/assets/potrait-shot.jpg" class="sm:w-1/2 mx-auto rounded-xl" alt="Rioba Ian">
 </div>
 
 ### As a developer

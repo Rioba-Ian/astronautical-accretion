@@ -1,0 +1,41 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import LinkButton from "@components/LinkButton.astro";
+import { SITE } from "@config";
+
+const cvUrl = "https://docs.google.com/document/d/16HOjtUvnVX5WQLaZrxBxlJ0QBpWuEmUungowsHfCPP8/edit?usp=sharing";
+---
+
+<Layout title={`Hire Me | ${SITE.title}`}>
+  <Header />
+  <main id="main-content">
+    <section id="hire-me" class="mb-28 max-w-3xl prose-img:border-0">
+      <h1 class="text-3xl tracking-wider sm:text-4xl font-bold mb-8">Work With Me</h1>
+      
+      <p class="mb-8 text-lg leading-relaxed">
+        I specialize in building robust, scalable applications and solving complex data problems. 
+        Whether you need a consultant, a software engineer, or a speaker for your next event, 
+        I'm here to help you achieve your goals.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 mt-8">
+        <LinkButton href="/schedule-call" className="py-3 px-6 text-lg" variant="primary">
+          Schedule a Call
+        </LinkButton>
+        
+        <LinkButton href={cvUrl} className="py-3 px-6 text-lg" variant="outline" title="View CV">
+          View My CV
+        </LinkButton>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  #hire-me {
+    @apply mx-auto pb-12 pt-20 px-4;
+  }
+</style>
